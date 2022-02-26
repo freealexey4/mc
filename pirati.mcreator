@@ -40,7 +40,7 @@
       "name": "Uhuuuuuuuuuuuuuuuuuuuu",
       "type": "dimension",
       "sortid": 2,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "uhuuuuuuuuuuuuuuuuuuuu",
       "metadata": {
@@ -61,6 +61,7 @@
   "language_map": {
     "en_us": {
       "item.pirati.pirat_spawn_egg": "Pirat Spawn Egg",
+      "biome.pirati.uhuuuuuuuuuu": "Uhuuuuuuuuuu",
       "entity.pirati.pirat": "Pirat"
     }
   },
