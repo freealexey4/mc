@@ -43,7 +43,6 @@ import net.minecraft.core.Registry;
 import net.mcreator.pirati.world.features.treedecorators.UhuuuuuuuuuuTrunkDecorator;
 import net.mcreator.pirati.world.features.treedecorators.UhuuuuuuuuuuLeaveDecorator;
 import net.mcreator.pirati.world.features.treedecorators.UhuuuuuuuuuuFruitDecorator;
-import net.mcreator.pirati.init.PiratiModEntities;
 import net.mcreator.pirati.init.PiratiModBiomes;
 import net.mcreator.pirati.PiratiMod;
 
@@ -91,7 +90,6 @@ public class UhuuuuuuuuuuBiome {
 		BiomeDefaultFeatures.addSurfaceFreezing(biomeGenerationSettings);
 		MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder().setPlayerCanSpawn();
 		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.SKELETON, 20, 4, 4));
-		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(PiratiModEntities.PIRAT, 20, 4, 4));
 		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.RAIN).biomeCategory(Biome.BiomeCategory.JUNGLE).depth(0.1f).scale(0.2f)
 				.temperature(0.5f).downfall(0.5f).specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build())
 				.generationSettings(biomeGenerationSettings.build()).build();
