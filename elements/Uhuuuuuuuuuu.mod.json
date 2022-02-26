@@ -118,6 +118,15 @@
         "maxGroup": 4,
         "weight": 20,
         "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:Pirat"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 20,
+        "spawnType": "monster"
       }
     ]
   }
