@@ -35,6 +35,25 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "pirat"
+    },
+    {
+      "name": "Uhuuuuuuuuuuuuuuuuuuuu",
+      "type": "dimension",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uhuuuuuuuuuuuuuuuuuuuu",
+      "metadata": {
+        "ep": true
+      }
+    },
+    {
+      "name": "Uhuuuuuuuuuu",
+      "type": "biome",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uhuuuuuuuuuu"
     }
   ],
   "variable_elements": [],
