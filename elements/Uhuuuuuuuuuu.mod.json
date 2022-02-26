@@ -73,10 +73,10 @@
     "treeType": 1,
     "minHeight": 18,
     "treeStem": {
-      "value": "Blocks.LEAVES"
+      "value": "Blocks.LOG"
     },
     "treeBranch": {
-      "value": "Blocks.LOG"
+      "value": "Blocks.LEAVES"
     },
     "treeVines": {
       "value": "Blocks.GLOW_LICHEN"
