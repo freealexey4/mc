@@ -31,12 +31,24 @@
           }
         ]
       }
+    },
+    {
+      "name": "Uhuuuuuuuuuuuuuuuuuuuu",
+      "type": "dimension",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uhuuuuuuuuuuuuuuuuuuuu",
+      "metadata": {
+        "ep": true
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.pirati.uhuuuuuuuuuuuuuuuuuuuu": "Uhuuuuuuuuuuuuuuuuuuuu Portal Igniter",
       "biome.pirati.uhuuuuuuuuuu": "Uhuuuuuuuuuu"
     }
   },

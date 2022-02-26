@@ -12,6 +12,8 @@ import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 
+import net.mcreator.pirati.item.UhuuuuuuuuuuuuuuuuuuuuItem;
+
 import java.util.List;
 import java.util.ArrayList;
 
@@ -21,6 +23,7 @@ public class PiratiModItems {
 	public static final Item PIRAT = register(
 			new SpawnEggItem(PiratiModEntities.PIRAT, -205, -16711834, new Item.Properties().tab(CreativeModeTab.TAB_MISC))
 					.setRegistryName("pirat_spawn_egg"));
+	public static final Item UHUUUUUUUUUUUUUUUUUUUU = register(new UhuuuuuuuuuuuuuuuuuuuuItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
