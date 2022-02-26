@@ -1,12 +1,40 @@
 {
   "mod_elements": [
     {
-      "name": "Uhuuuuuuuuuu",
-      "type": "biome",
+      "name": "PiratPriObnovlieniiTaktaSushchnosti",
+      "type": "procedure",
       "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "uhuuuuuuuuuu"
+      "registry_name": "pirat_pri_obnovlienii_takta_sushchnosti",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pirat",
+      "type": "livingentity",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pirat"
     },
     {
       "name": "Uhuuuuuuuuuuuuuuuuuuuu",
@@ -18,14 +46,22 @@
       "metadata": {
         "ep": true
       }
+    },
+    {
+      "name": "Uhuuuuuuuuuu",
+      "type": "biome",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uhuuuuuuuuuu"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.pirati.uhuuuuuuuuuuuuuuuuuuuu": "Uhuuuuuuuuuuuuuuuuuuuu Portal Igniter",
-      "biome.pirati.uhuuuuuuuuuu": "Uhuuuuuuuuuu"
+      "item.pirati.pirat_spawn_egg": "Pirat Spawn Egg",
+      "entity.pirati.pirat": "Pirat"
     }
   },
   "foldersRoot": {
