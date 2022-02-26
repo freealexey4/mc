@@ -7,6 +7,30 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "uhuuuuuuuuuu"
+    },
+    {
+      "name": "Pirat",
+      "type": "livingentity",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pirat"
+    },
+    {
+      "name": "PiratPriObnovlieniiTaktaSushchnosti",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pirat_pri_obnovlienii_takta_sushchnosti",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
