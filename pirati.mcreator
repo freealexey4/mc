@@ -1,9 +1,37 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "PiratPriObnovlieniiTaktaSushchnosti",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pirat_pri_obnovlienii_takta_sushchnosti",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pirat",
+      "type": "livingentity",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pirat"
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.pirati.pirat_spawn_egg": "Pirat Spawn Egg",
+      "entity.pirati.pirat": "Pirat"
+    }
   },
   "foldersRoot": {
     "name": "~",
