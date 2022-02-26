@@ -20,7 +20,7 @@
       "name": "PiratPriObnovlieniiTaktaSushchnosti",
       "type": "procedure",
       "sortid": 1,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "pirat_pri_obnovlienii_takta_sushchnosti",
       "metadata": {
