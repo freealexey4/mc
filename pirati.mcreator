@@ -40,7 +40,7 @@
       "name": "Uhuuuuuuuuuuuuuuuuuuuu",
       "type": "dimension",
       "sortid": 2,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "uhuuuuuuuuuuuuuuuuuuuu",
       "metadata": {
@@ -54,13 +54,24 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "uhuuuuuuuuuu"
+    },
+    {
+      "name": "Typirat",
+      "type": "achievement",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "typirat"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "advancements.typirat.descr": "ты попал в мир пиратов",
+      "item.pirati.uhuuuuuuuuuuuuuuuuuuuu": "Uhuuuuuuuuuuuuuuuuuuuu Portal Igniter",
       "item.pirati.pirat_spawn_egg": "Pirat Spawn Egg",
+      "advancements.typirat.title": "Typirat",
       "biome.pirati.uhuuuuuuuuuu": "Uhuuuuuuuuuu",
       "entity.pirati.pirat": "Pirat"
     }
