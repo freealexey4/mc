@@ -15,6 +15,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.pirati.entity.PiratEntity;
+import net.mcreator.pirati.entity.GghghghghghghghghghghghghghghghghghghghghghEntity;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -25,6 +26,12 @@ public class PiratiModEntities {
 	public static final EntityType<PiratEntity> PIRAT = register("pirat",
 			EntityType.Builder.<PiratEntity>of(PiratEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(3).setCustomClientFactory(PiratEntity::new).sized(0.6f, 1.8f));
+	public static final EntityType<GghghghghghghghghghghghghghghghghghghghghghEntity> GGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGH = register(
+			"entitybulletgghghghghghghghghghghghghghghghghghghghghgh",
+			EntityType.Builder
+					.<GghghghghghghghghghghghghghghghghghghghghghEntity>of(GghghghghghghghghghghghghghghghghghghghghghEntity::new, MobCategory.MISC)
+					.setCustomClientFactory(GghghghghghghghghghghghghghghghghghghghghghEntity::new).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> EntityType<T> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		EntityType<T> entityType = (EntityType<T>) entityTypeBuilder.build(registryname).setRegistryName(registryname);

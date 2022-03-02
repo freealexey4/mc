@@ -1,8 +1,6 @@
 
 package net.mcreator.pirati.world.biome;
 
-import net.minecraftforge.common.BiomeManager;
-
 import net.minecraft.world.level.levelgen.surfacebuilders.SurfaceBuilderBaseConfiguration;
 import net.minecraft.world.level.levelgen.surfacebuilders.SurfaceBuilder;
 import net.minecraft.world.level.levelgen.surfacebuilders.ConfiguredSurfaceBuilder;
@@ -32,7 +30,6 @@ import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.Music;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.resources.ResourceKey;
 import net.minecraft.data.worldgen.StructureFeatures;
 import net.minecraft.data.worldgen.Features;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
@@ -43,7 +40,7 @@ import net.minecraft.core.Registry;
 import net.mcreator.pirati.world.features.treedecorators.UhuuuuuuuuuuTrunkDecorator;
 import net.mcreator.pirati.world.features.treedecorators.UhuuuuuuuuuuLeaveDecorator;
 import net.mcreator.pirati.world.features.treedecorators.UhuuuuuuuuuuFruitDecorator;
-import net.mcreator.pirati.init.PiratiModBiomes;
+import net.mcreator.pirati.init.PiratiModEntities;
 import net.mcreator.pirati.PiratiMod;
 
 import java.util.Map;
@@ -90,6 +87,7 @@ public class UhuuuuuuuuuuBiome {
 		BiomeDefaultFeatures.addSurfaceFreezing(biomeGenerationSettings);
 		MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder().setPlayerCanSpawn();
 		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.SKELETON, 20, 4, 4));
+		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(PiratiModEntities.PIRAT, 20, 4, 4));
 		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.RAIN).biomeCategory(Biome.BiomeCategory.JUNGLE).depth(0.1f).scale(0.2f)
 				.temperature(0.5f).downfall(0.5f).specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build())
 				.generationSettings(biomeGenerationSettings.build()).build();
@@ -99,8 +97,6 @@ public class UhuuuuuuuuuuBiome {
 		Registry.register(BuiltinRegistries.CONFIGURED_SURFACE_BUILDER, new ResourceLocation(PiratiMod.MODID, "uhuuuuuuuuuu"), SURFACE_BUILDER);
 		CONFIGURED_FEATURES.forEach((resourceLocation, configuredFeature) -> Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, resourceLocation,
 				configuredFeature));
-		BiomeManager.addBiome(BiomeManager.BiomeType.WARM, new BiomeManager.BiomeEntry(
-				ResourceKey.create(Registry.BIOME_REGISTRY, BuiltinRegistries.BIOME.getKey(PiratiModBiomes.UHUUUUUUUUUU)), 10));
 	}
 
 	private static final Map<ResourceLocation, ConfiguredFeature<?, ?>> CONFIGURED_FEATURES = new HashMap<>();

@@ -40,7 +40,7 @@
       "name": "Uhuuuuuuuuuuuuuuuuuuuu",
       "type": "dimension",
       "sortid": 2,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "uhuuuuuuuuuuuuuuuuuuuu",
       "metadata": {
@@ -54,14 +54,73 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "uhuuuuuuuuuu"
+    },
+    {
+      "name": "Uuuuu",
+      "type": "tool",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uuuuu"
+    },
+    {
+      "name": "Gghghghghghghghghghghghghghghghghghghghghgh",
+      "type": "rangeditem",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gghghghghghghghghghghghghghghghghghghghghgh"
+    },
+    {
+      "name": "Yvts",
+      "type": "achievement",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yvts"
+    },
+    {
+      "name": "Yvyvyv",
+      "type": "potioneffect",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yvyvyv"
+    },
+    {
+      "name": "Tsutsau",
+      "type": "potion",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tsutsau"
+    },
+    {
+      "name": "Qqqq",
+      "type": "tool",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qqqq"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.pirati.pirat_spawn_egg": "Pirat Spawn Egg",
+      "item.minecraft.lingering_potion.effect.tsutsau": "Lingering Potion of Tsutsau",
+      "item.minecraft.potion.effect.tsutsau": "Potion of Tsutsau",
+      "advancements.yvts.title": "Yvts",
+      "item.pirati.uuuuu": "Uuuuu",
       "biome.pirati.uhuuuuuuuuuu": "Uhuuuuuuuuuu",
+      "item.pirati.gghghghghghghghghghghghghghghghghghghghghgh": "Gghghghghghghghghghghghghghghghghghghghghgh",
+      "advancements.yvts.descr": "ты пират ",
+      "effect.pirati.yvyvyv": "ахахаххаах",
+      "item.minecraft.splash_potion.effect.tsutsau": "Splash Potion of Tsutsau",
+      "item.pirati.uhuuuuuuuuuuuuuuuuuuuu": "Uhuuuuuuuuuuuuuuuuuuuu Portal Igniter",
+      "item.pirati.pirat_spawn_egg": "Pirat Spawn Egg",
+      "item.pirati.qqqq": "Qqqq",
+      "item.minecraft.tipped_arrow.effect.tsutsau": "Arrow of Tsutsau",
       "entity.pirati.pirat": "Pirat"
     }
   },

@@ -1,0 +1,37 @@
+{
+  "_fv": 24,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "12-removebg-preview",
+    "customModelName": "Normal",
+    "name": "Gghghghghghghghghghghghghghghghghghghghghgh",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": "Blocks.WOODEN_BUTTON"
+    },
+    "shootConstantly": false,
+    "usageCount": 100,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 100.0,
+    "bulletDamage": 25.0,
+    "bulletKnockback": 15,
+    "bulletParticles": true,
+    "bulletIgnitesFire": true,
+    "bulletItemTexture": {
+      "value": "Blocks.POLISHED_BLACKSTONE_BUTTON"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}
