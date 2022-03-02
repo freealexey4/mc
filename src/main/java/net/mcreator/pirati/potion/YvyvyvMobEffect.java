@@ -1,10 +1,8 @@
 
 package net.mcreator.pirati.potion;
 
-import net.minecraft.world.effect.MobEffectCategory;
-import net.minecraft.world.effect.MobEffect;
-
 public class YvyvyvMobEffect extends MobEffect {
+
 	public YvyvyvMobEffect() {
 		super(MobEffectCategory.HARMFUL, -16764109);
 		setRegistryName("yvyvyv");
@@ -24,4 +22,5 @@ public class YvyvyvMobEffect extends MobEffect {
 	public boolean isDurationEffectTick(int duration, int amplifier) {
 		return true;
 	}
+
 }

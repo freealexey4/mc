@@ -40,7 +40,7 @@
       "name": "Uhuuuuuuuuuuuuuuuuuuuu",
       "type": "dimension",
       "sortid": 2,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "uhuuuuuuuuuuuuuuuuuuuu",
       "metadata": {
@@ -56,14 +56,6 @@
       "registry_name": "uhuuuuuuuuuu"
     },
     {
-      "name": "Uuuuu",
-      "type": "tool",
-      "sortid": 3,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "uuuuu"
-    },
-    {
       "name": "Gghghghghghghghghghghghghghghghghghghghghgh",
       "type": "rangeditem",
       "sortid": 4,
@@ -72,12 +64,12 @@
       "registry_name": "gghghghghghghghghghghghghghghghghghghghghgh"
     },
     {
-      "name": "Yvts",
-      "type": "achievement",
-      "sortid": 5,
+      "name": "Uuuuu",
+      "type": "tool",
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "yvts"
+      "registry_name": "uuuuu"
     },
     {
       "name": "Yvyvyv",
@@ -86,6 +78,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "yvyvyv"
+    },
+    {
+      "name": "Yvts",
+      "type": "achievement",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yvts"
     },
     {
       "name": "Tsutsau",
@@ -102,6 +102,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "qqqq"
+    },
+    {
+      "name": "Typirat",
+      "type": "achievement",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "typirat"
     }
   ],
   "variable_elements": [],
