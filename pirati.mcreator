@@ -1,34 +1,6 @@
 {
   "mod_elements": [
     {
-      "name": "PiratPriObnovlieniiTaktaSushchnosti",
-      "type": "procedure",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pirat_pri_obnovlienii_takta_sushchnosti",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "Pirat",
       "type": "livingentity",
       "sortid": 1,
@@ -40,7 +12,7 @@
       "name": "Uhuuuuuuuuuuuuuuuuuuuu",
       "type": "dimension",
       "sortid": 2,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "uhuuuuuuuuuuuuuuuuuuuu",
       "metadata": {
@@ -110,6 +82,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "typirat"
+    },
+    {
+      "name": "Piratka",
+      "type": "livingentity",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "piratka"
     }
   ],
   "variable_elements": [],
@@ -117,15 +97,19 @@
   "language_map": {
     "en_us": {
       "item.minecraft.lingering_potion.effect.tsutsau": "Lingering Potion of Tsutsau",
+      "advancements.typirat.descr": "ты попал в мир пиратов",
       "item.minecraft.potion.effect.tsutsau": "Potion of Tsutsau",
       "advancements.yvts.title": "Yvts",
+      "advancements.typirat.title": "Typirat",
       "item.pirati.uuuuu": "Uuuuu",
+      "entity.pirati.piratka": "Piratka",
       "biome.pirati.uhuuuuuuuuuu": "Uhuuuuuuuuuu",
       "item.pirati.gghghghghghghghghghghghghghghghghghghghghgh": "Gghghghghghghghghghghghghghghghghghghghghgh",
       "advancements.yvts.descr": "ты пират ",
       "effect.pirati.yvyvyv": "ахахаххаах",
       "item.minecraft.splash_potion.effect.tsutsau": "Splash Potion of Tsutsau",
       "item.pirati.uhuuuuuuuuuuuuuuuuuuuu": "Uhuuuuuuuuuuuuuuuuuuuu Portal Igniter",
+      "item.pirati.piratka_spawn_egg": "Piratka Spawn Egg",
       "item.pirati.pirat_spawn_egg": "Pirat Spawn Egg",
       "item.pirati.qqqq": "Qqqq",
       "item.minecraft.tipped_arrow.effect.tsutsau": "Arrow of Tsutsau",
