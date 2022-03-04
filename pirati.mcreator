@@ -90,6 +90,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "piratka"
+    },
+    {
+      "name": "Korabl",
+      "type": "structure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "korabl"
     }
   ],
   "variable_elements": [],

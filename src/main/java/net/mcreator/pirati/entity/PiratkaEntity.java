@@ -36,11 +36,16 @@ import net.minecraft.network.protocol.Packet;
 
 import net.mcreator.pirati.init.PiratiModEntities;
 
+import java.util.Set;
+
 @Mod.EventBusSubscriber
 public class PiratkaEntity extends Monster {
+	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("beach"));
+
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(PiratiModEntities.PIRATKA, 20, 4, 4));
+		if (SPAWN_BIOMES.contains(event.getName()))
+			event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(PiratiModEntities.PIRATKA, 20, 4, 4));
 	}
 
 	public PiratkaEntity(FMLPlayMessages.SpawnEntity packet, Level world) {
