@@ -14,6 +14,7 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.pirati.entity.PiratparotEntity;
 import net.mcreator.pirati.entity.PiratkaEntity;
 import net.mcreator.pirati.entity.PiratEntity;
 import net.mcreator.pirati.entity.GghghghghghghghghghghghghghghghghghghghghghEntity;
@@ -36,6 +37,9 @@ public class PiratiModEntities {
 	public static final EntityType<PiratkaEntity> PIRATKA = register("piratka",
 			EntityType.Builder.<PiratkaEntity>of(PiratkaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(3).setCustomClientFactory(PiratkaEntity::new).sized(0.6f, 1.8f));
+	public static final EntityType<PiratparotEntity> PIRATPAROT = register("piratparot",
+			EntityType.Builder.<PiratparotEntity>of(PiratparotEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PiratparotEntity::new).sized(0.6f, 1.8f));
 
 	private static <T extends Entity> EntityType<T> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		EntityType<T> entityType = (EntityType<T>) entityTypeBuilder.build(registryname).setRegistryName(registryname);
@@ -53,6 +57,7 @@ public class PiratiModEntities {
 		event.enqueueWork(() -> {
 			PiratEntity.init();
 			PiratkaEntity.init();
+			PiratparotEntity.init();
 		});
 	}
 
@@ -60,5 +65,6 @@ public class PiratiModEntities {
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(PIRAT, PiratEntity.createAttributes().build());
 		event.put(PIRATKA, PiratkaEntity.createAttributes().build());
+		event.put(PIRATPAROT, PiratparotEntity.createAttributes().build());
 	}
 }
