@@ -39,7 +39,7 @@ public class PiratiModEntities {
 					.setUpdateInterval(3).setCustomClientFactory(PiratkaEntity::new).sized(0.6f, 1.8f));
 	public static final EntityType<PiratparotEntity> PIRATPAROT = register("piratparot",
 			EntityType.Builder.<PiratparotEntity>of(PiratparotEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PiratparotEntity::new).sized(0.6f, 1.8f));
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PiratparotEntity::new).sized(1f, 1f));
 
 	private static <T extends Entity> EntityType<T> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		EntityType<T> entityType = (EntityType<T>) entityTypeBuilder.build(registryname).setRegistryName(registryname);
