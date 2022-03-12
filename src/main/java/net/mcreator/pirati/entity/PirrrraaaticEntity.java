@@ -20,28 +20,26 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 
+import net.mcreator.pirati.procedures.PirrrraaaticKoghdaSnariadPriziemliaietsiaNaBlokProcedure;
 import net.mcreator.pirati.init.PiratiModEntities;
 
 import java.util.Random;
 
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
-public class GghghghghghghghghghghghghghghghghghghghghghEntity extends AbstractArrow implements ItemSupplier {
-	public GghghghghghghghghghghghghghghghghghghghghghEntity(FMLPlayMessages.SpawnEntity packet, Level world) {
-		super(PiratiModEntities.GGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGH, world);
+public class PirrrraaaticEntity extends AbstractArrow implements ItemSupplier {
+	public PirrrraaaticEntity(FMLPlayMessages.SpawnEntity packet, Level world) {
+		super(PiratiModEntities.PIRRRRAAATIC, world);
 	}
 
-	public GghghghghghghghghghghghghghghghghghghghghghEntity(EntityType<? extends GghghghghghghghghghghghghghghghghghghghghghEntity> type,
-			Level world) {
+	public PirrrraaaticEntity(EntityType<? extends PirrrraaaticEntity> type, Level world) {
 		super(type, world);
 	}
 
-	public GghghghghghghghghghghghghghghghghghghghghghEntity(EntityType<? extends GghghghghghghghghghghghghghghghghghghghghghEntity> type, double x,
-			double y, double z, Level world) {
+	public PirrrraaaticEntity(EntityType<? extends PirrrraaaticEntity> type, double x, double y, double z, Level world) {
 		super(type, x, y, z, world);
 	}
 
-	public GghghghghghghghghghghghghghghghghghghghghghEntity(EntityType<? extends GghghghghghghghghghghghghghghghghghghghghghEntity> type,
-			LivingEntity entity, Level world) {
+	public PirrrraaaticEntity(EntityType<? extends PirrrraaaticEntity> type, LivingEntity entity, Level world) {
 		super(type, entity, world);
 	}
 
@@ -53,12 +51,12 @@ public class GghghghghghghghghghghghghghghghghghghghghghEntity extends AbstractA
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public ItemStack getItem() {
-		return new ItemStack(Blocks.POLISHED_BLACKSTONE_BUTTON);
+		return new ItemStack(Blocks.MAGENTA_BED);
 	}
 
 	@Override
 	protected ItemStack getPickupItem() {
-		return new ItemStack(Blocks.OAK_BUTTON);
+		return new ItemStack(Blocks.DIRT);
 	}
 
 	@Override
@@ -77,14 +75,14 @@ public class GghghghghghghghghghghghghghghghghghghghghghEntity extends AbstractA
 		Entity entity = this.getOwner();
 		Entity imediatesourceentity = this;
 		if (this.inGround) {
+
+			PirrrraaaticKoghdaSnariadPriziemliaietsiaNaBlokProcedure.execute(world, x, y, z);
 			this.discard();
 		}
 	}
 
-	public static GghghghghghghghghghghghghghghghghghghghghghEntity shoot(Level world, LivingEntity entity, Random random, float power, double damage,
-			int knockback) {
-		GghghghghghghghghghghghghghghghghghghghghghEntity entityarrow = new GghghghghghghghghghghghghghghghghghghghghghEntity(
-				PiratiModEntities.GGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGH, entity, world);
+	public static PirrrraaaticEntity shoot(Level world, LivingEntity entity, Random random, float power, double damage, int knockback) {
+		PirrrraaaticEntity entityarrow = new PirrrraaaticEntity(PiratiModEntities.PIRRRRAAATIC, entity, world);
 		entityarrow.shoot(entity.getLookAngle().x, entity.getLookAngle().y, entity.getLookAngle().z, power * 2, 0);
 		entityarrow.setSilent(true);
 		entityarrow.setCritArrow(true);
@@ -98,16 +96,15 @@ public class GghghghghghghghghghghghghghghghghghghghghghEntity extends AbstractA
 		return entityarrow;
 	}
 
-	public static GghghghghghghghghghghghghghghghghghghghghghEntity shoot(LivingEntity entity, LivingEntity target) {
-		GghghghghghghghghghghghghghghghghghghghghghEntity entityarrow = new GghghghghghghghghghghghghghghghghghghghghghEntity(
-				PiratiModEntities.GGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGH, entity, entity.level);
+	public static PirrrraaaticEntity shoot(LivingEntity entity, LivingEntity target) {
+		PirrrraaaticEntity entityarrow = new PirrrraaaticEntity(PiratiModEntities.PIRRRRAAATIC, entity, entity.level);
 		double d0 = target.getY() + (double) target.getEyeHeight() - 1.1;
 		double d1 = target.getX() - entity.getX();
 		double d3 = target.getZ() - entity.getZ();
-		entityarrow.shoot(d1, d0 - entityarrow.getY() + Math.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 100f * 2, 12.0F);
+		entityarrow.shoot(d1, d0 - entityarrow.getY() + Math.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 1f * 2, 12.0F);
 		entityarrow.setSilent(true);
-		entityarrow.setBaseDamage(25);
-		entityarrow.setKnockback(15);
+		entityarrow.setBaseDamage(100);
+		entityarrow.setKnockback(80);
 		entityarrow.setCritArrow(true);
 		entityarrow.setSecondsOnFire(100);
 		entity.level.addFreshEntity(entityarrow);

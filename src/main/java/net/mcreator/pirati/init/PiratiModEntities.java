@@ -14,6 +14,7 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.pirati.entity.PirrrraaaticEntity;
 import net.mcreator.pirati.entity.PiratparotEntity;
 import net.mcreator.pirati.entity.PiratkaEntity;
 import net.mcreator.pirati.entity.PiratEntity;
@@ -40,6 +41,9 @@ public class PiratiModEntities {
 	public static final EntityType<PiratparotEntity> PIRATPAROT = register("piratparot",
 			EntityType.Builder.<PiratparotEntity>of(PiratparotEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PiratparotEntity::new).sized(1f, 1f));
+	public static final EntityType<PirrrraaaticEntity> PIRRRRAAATIC = register("entitybulletpirrrraaatic",
+			EntityType.Builder.<PirrrraaaticEntity>of(PirrrraaaticEntity::new, MobCategory.MISC).setCustomClientFactory(PirrrraaaticEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> EntityType<T> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		EntityType<T> entityType = (EntityType<T>) entityTypeBuilder.build(registryname).setRegistryName(registryname);

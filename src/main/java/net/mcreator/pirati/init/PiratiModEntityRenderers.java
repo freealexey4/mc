@@ -23,5 +23,6 @@ public class PiratiModEntityRenderers {
 		event.registerEntityRenderer(PiratiModEntities.GGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGH, ThrownItemRenderer::new);
 		event.registerEntityRenderer(PiratiModEntities.PIRATKA, PiratkaRenderer::new);
 		event.registerEntityRenderer(PiratiModEntities.PIRATPAROT, PiratparotRenderer::new);
+		event.registerEntityRenderer(PiratiModEntities.PIRRRRAAATIC, ThrownItemRenderer::new);
 	}
 }

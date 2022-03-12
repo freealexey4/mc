@@ -1,12 +1,23 @@
 package net.mcreator.pirati.world.features.treedecorators;
 
+import net.minecraftforge.registries.ForgeRegistries;
+
+import net.minecraft.world.level.levelgen.feature.treedecorators.TrunkVineDecorator;
+import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecoratorType;
+import net.minecraft.world.level.levelgen.feature.Feature;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.LevelSimulatedReader;
+import net.minecraft.core.BlockPos;
+
+import java.util.function.BiConsumer;
+import java.util.Random;
+import java.util.List;
+
 public class UhuuuuuuuuuuTrunkDecorator extends TrunkVineDecorator {
-
 	public static final UhuuuuuuuuuuTrunkDecorator INSTANCE = new UhuuuuuuuuuuTrunkDecorator();
-
 	public static com.mojang.serialization.Codec<UhuuuuuuuuuuTrunkDecorator> codec;
 	public static TreeDecoratorType<?> tdt;
-
 	static {
 		codec = com.mojang.serialization.Codec.unit(() -> INSTANCE);
 		tdt = new TreeDecoratorType<>(codec);
@@ -29,7 +40,6 @@ public class UhuuuuuuuuuuTrunkDecorator extends TrunkVineDecorator {
 					biConsumer.accept(blockpos, Blocks.GLOW_LICHEN.defaultBlockState());
 				}
 			}
-
 		});
 	}
 }

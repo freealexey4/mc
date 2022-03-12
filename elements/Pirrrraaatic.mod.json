@@ -1,0 +1,40 @@
+{
+  "_fv": 24,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "371f80d05b724f3382f7a9204c6da521-removebg-preview",
+    "customModelName": "Normal",
+    "name": "Pirrrraaatic",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": "Blocks.DIRT#0"
+    },
+    "shootConstantly": false,
+    "usageCount": 6,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "animation": "drink",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 1.0,
+    "bulletDamage": 100.0,
+    "bulletKnockback": 80,
+    "bulletParticles": true,
+    "bulletIgnitesFire": true,
+    "bulletItemTexture": {
+      "value": "Blocks.MAGENTA_BED"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "parrot.png",
+    "onBulletHitsBlock": {
+      "name": "PirrrraaaticKoghdaSnariadPriziemliaietsiaNaBlok"
+    }
+  }
+}

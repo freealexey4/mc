@@ -106,6 +106,42 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "piratparot"
+    },
+    {
+      "name": "PirrrraaaticKoghdaSnariadPriziemliaietsiaNaBlok",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pirrrraaatic_koghda_snariad_priziemliaietsia_na_blok",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pirrrraaatic",
+      "type": "rangeditem",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pirrrraaatic"
     }
   ],
   "variable_elements": [],
@@ -114,6 +150,7 @@
     "en_us": {
       "item.minecraft.lingering_potion.effect.tsutsau": "Lingering Potion of Tsutsau",
       "advancements.typirat.descr": "ты попал в мир пиратов",
+      "item.pirati.pirrrraaatic": "Pirrrraaatic",
       "item.minecraft.potion.effect.tsutsau": "Potion of Tsutsau",
       "advancements.yvts.title": "Yvts",
       "advancements.typirat.title": "Typirat",

@@ -16,12 +16,12 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
 
-import net.mcreator.pirati.entity.GghghghghghghghghghghghghghghghghghghghghghEntity;
+import net.mcreator.pirati.entity.PirrrraaaticEntity;
 
-public class GghghghghghghghghghghghghghghghghghghghghghItem extends Item {
-	public GghghghghghghghghghghghghghghghghghghghghghItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).durability(100));
-		setRegistryName("gghghghghghghghghghghghghghghghghghghghghgh");
+public class PirrrraaaticItem extends Item {
+	public PirrrraaaticItem() {
+		super(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).durability(6));
+		setRegistryName("pirrrraaatic");
 	}
 
 	@Override
@@ -32,7 +32,7 @@ public class GghghghghghghghghghghghghghghghghghghghghghItem extends Item {
 
 	@Override
 	public UseAnim getUseAnimation(ItemStack itemstack) {
-		return UseAnim.BOW;
+		return UseAnim.DRINK;
 	}
 
 	@Override
@@ -47,24 +47,23 @@ public class GghghghghghghghghghghghghghghghghghghghghghItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (true) {
-				ItemStack stack = ProjectileWeaponItem.getHeldProjectile(entity, e -> e.getItem() == Blocks.OAK_BUTTON.asItem());
+				ItemStack stack = ProjectileWeaponItem.getHeldProjectile(entity, e -> e.getItem() == Blocks.DIRT.asItem());
 				if (stack == ItemStack.EMPTY) {
 					for (int i = 0; i < entity.getInventory().items.size(); i++) {
 						ItemStack teststack = entity.getInventory().items.get(i);
-						if (teststack != null && teststack.getItem() == Blocks.OAK_BUTTON.asItem()) {
+						if (teststack != null && teststack.getItem() == Blocks.DIRT.asItem()) {
 							stack = teststack;
 							break;
 						}
 					}
 				}
 				if (entity.getAbilities().instabuild || stack != ItemStack.EMPTY) {
-					GghghghghghghghghghghghghghghghghghghghghghEntity entityarrow = GghghghghghghghghghghghghghghghghghghghghghEntity.shoot(world,
-							entity, world.getRandom(), 100f, 25, 15);
+					PirrrraaaticEntity entityarrow = PirrrraaaticEntity.shoot(world, entity, world.getRandom(), 1f, 100, 80);
 					itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 					if (entity.getAbilities().instabuild) {
 						entityarrow.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;
 					} else {
-						if (new ItemStack(Blocks.OAK_BUTTON).isDamageableItem()) {
+						if (new ItemStack(Blocks.DIRT).isDamageableItem()) {
 							if (stack.hurt(1, world.getRandom(), entity)) {
 								stack.shrink(1);
 								stack.setDamageValue(0);
