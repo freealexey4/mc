@@ -1,34 +1,6 @@
 {
   "mod_elements": [
     {
-      "name": "PiratPriObnovlieniiTaktaSushchnosti",
-      "type": "procedure",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pirat_pri_obnovlienii_takta_sushchnosti",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "Pirat",
       "type": "livingentity",
       "sortid": 1,
@@ -60,7 +32,9 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.pirati.uhuuuuuuuuuuuuuuuuuuuu": "Uhuuuuuuuuuuuuuuuuuuuu Portal Igniter",
       "item.pirati.pirat_spawn_egg": "Pirat Spawn Egg",
+      "biome.pirati.uhuuuuuuuuuu": "Uhuuuuuuuuuu",
       "entity.pirati.pirat": "Pirat"
     }
   },
