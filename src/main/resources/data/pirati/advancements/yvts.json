@@ -1,0 +1,29 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "pirati:uhuuuuuuuuuuuuuuuuuuuu"
+    },
+    "title": {
+      "translate": "advancements.yvts.title"
+    },
+    "description": {
+      "translate": "advancements.yvts.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "yvts": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "biome": "pirati:uhuuuuuuuuuu"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1000
+  }
+}

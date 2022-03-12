@@ -26,15 +26,111 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "uhuuuuuuuuuu"
+    },
+    {
+      "name": "Gghghghghghghghghghghghghghghghghghghghghgh",
+      "type": "rangeditem",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gghghghghghghghghghghghghghghghghghghghghgh"
+    },
+    {
+      "name": "Uuuuu",
+      "type": "tool",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uuuuu"
+    },
+    {
+      "name": "Yvyvyv",
+      "type": "potioneffect",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yvyvyv"
+    },
+    {
+      "name": "Piratka",
+      "type": "livingentity",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "piratka"
+    },
+    {
+      "name": "Korabl",
+      "type": "structure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "korabl"
+    },
+    {
+      "name": "Yvts",
+      "type": "achievement",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yvts"
+    },
+    {
+      "name": "Tsutsau",
+      "type": "potion",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tsutsau"
+    },
+    {
+      "name": "Qqqq",
+      "type": "tool",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qqqq"
+    },
+    {
+      "name": "Typirat",
+      "type": "achievement",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "typirat"
+    },
+    {
+      "name": "Piratparot",
+      "type": "livingentity",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "piratparot"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.minecraft.lingering_potion.effect.tsutsau": "Lingering Potion of Tsutsau",
+      "advancements.typirat.descr": "ты попал в мир пиратов",
+      "item.minecraft.potion.effect.tsutsau": "Potion of Tsutsau",
+      "advancements.yvts.title": "Yvts",
+      "advancements.typirat.title": "Typirat",
+      "item.pirati.uuuuu": "Uuuuu",
+      "entity.pirati.piratka": "Piratka",
+      "biome.pirati.uhuuuuuuuuuu": "Uhuuuuuuuuuu",
+      "item.pirati.gghghghghghghghghghghghghghghghghghghghghgh": "Gghghghghghghghghghghghghghghghghghghghghgh",
+      "entity.pirati.piratparot": "Piratparot",
+      "advancements.yvts.descr": "ты пират ",
+      "effect.pirati.yvyvyv": "ахахаххаах",
+      "item.minecraft.splash_potion.effect.tsutsau": "Splash Potion of Tsutsau",
+      "item.pirati.piratka_spawn_egg": "Piratka Spawn Egg",
       "item.pirati.uhuuuuuuuuuuuuuuuuuuuu": "Uhuuuuuuuuuuuuuuuuuuuu Portal Igniter",
       "item.pirati.pirat_spawn_egg": "Pirat Spawn Egg",
-      "biome.pirati.uhuuuuuuuuuu": "Uhuuuuuuuuuu",
+      "item.pirati.piratparot_spawn_egg": "Piratparot Spawn Egg",
+      "item.pirati.qqqq": "Qqqq",
+      "item.minecraft.tipped_arrow.effect.tsutsau": "Arrow of Tsutsau",
       "entity.pirati.pirat": "Pirat"
     }
   },
