@@ -2,10 +2,10 @@
   "_fv": 24,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Pirat",
+    "mobName": "Piratka",
     "mobLabel": "",
     "mobModelName": "Modelcustom_model",
-    "mobModelTexture": "texture.png",
+    "mobModelTexture": "texture_2.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
     "modelHeight": 1.8,
@@ -13,47 +13,47 @@
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -205,
+      "value": -16724788,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -16711834,
+      "value": -52429,
       "falpha": 0.0
     },
     "creativeTab": {
       "value": "MISC"
     },
-    "isBoss": true,
-    "bossBarColor": "GREEN",
+    "isBoss": false,
+    "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
-      "value": "Items.STONE_SWORD"
+      "value": ""
     },
     "equipmentOffHand": {
-      "value": "Items.GOLD_INGOT"
+      "value": ""
     },
     "equipmentHelmet": {
-      "value": "Items.CHAINMAIL_HELMET"
+      "value": ""
     },
     "equipmentBody": {
-      "value": "Items.CHAINMAIL_CHESTPLATE"
+      "value": ""
     },
     "equipmentLeggings": {
-      "value": "Items.CHAINMAIL_LEGGINGS"
+      "value": ""
     },
     "equipmentBoots": {
-      "value": "Items.CHAINMAIL_BOOTS"
+      "value": ""
     },
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
-    "attackStrength": 5,
+    "attackStrength": 3,
     "attackKnockback": 0.0,
     "knockbackResistance": 0.0,
     "movementSpeed": 0.3,
-    "armorBaseValue": 2.0,
+    "armorBaseValue": 0.0,
     "trackingRange": 64,
-    "health": 30,
-    "xpAmount": 20,
+    "health": 14,
+    "xpAmount": 0,
     "waterMob": false,
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
@@ -67,7 +67,7 @@
     "immuneToArrows": false,
     "immuneToFallDamage": false,
     "immuneToCactus": false,
-    "immuneToDrowning": true,
+    "immuneToDrowning": false,
     "immuneToLightning": false,
     "immuneToPotions": false,
     "immuneToPlayer": false,
@@ -77,7 +77,7 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": "Items.GOLD_INGOT"
+      "value": "Items.RAW_GOLD"
     },
     "livingSound": {
       "value": ""
@@ -100,7 +100,7 @@
     "particleAmount": 4,
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">TRUE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field><next><block type=\"follow_item_in_hands\"><field name=\"speed\">1</field><field name=\"scared\">FALSE</field><field name=\"condition\">null,null</field><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">Items.GOLD_INGOT</field></block></value></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],
@@ -115,7 +115,11 @@
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 4,
     "maxNumberOfMobsPerGroup": 4,
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "beaches"
+      }
+    ],
     "spawnInDungeons": false
   }
 }

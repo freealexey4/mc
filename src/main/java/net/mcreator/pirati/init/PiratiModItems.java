@@ -30,6 +30,12 @@ public class PiratiModItems {
 	public static final Item UUUUU = register(new UuuuuItem());
 	public static final Item GGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGH = register(new GghghghghghghghghghghghghghghghghghghghghghItem());
 	public static final Item QQQQ = register(new QqqqItem());
+	public static final Item PIRATKA = register(
+			new SpawnEggItem(PiratiModEntities.PIRATKA, -16724788, -52429, new Item.Properties().tab(CreativeModeTab.TAB_MISC))
+					.setRegistryName("piratka_spawn_egg"));
+	public static final Item PIRATPAROT = register(
+			new SpawnEggItem(PiratiModEntities.PIRATPAROT, -16711783, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC))
+					.setRegistryName("piratparot_spawn_egg"));
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
