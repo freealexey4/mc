@@ -11,8 +11,6 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
-import net.mcreator.pirati.client.renderer.PiratparotRenderer;
-import net.mcreator.pirati.client.renderer.PiratkaRenderer;
 import net.mcreator.pirati.client.renderer.PiratRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -21,7 +19,5 @@ public class PiratiModEntityRenderers {
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(PiratiModEntities.PIRAT, PiratRenderer::new);
 		event.registerEntityRenderer(PiratiModEntities.GGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGH, ThrownItemRenderer::new);
-		event.registerEntityRenderer(PiratiModEntities.PIRATKA, PiratkaRenderer::new);
-		event.registerEntityRenderer(PiratiModEntities.PIRATPAROT, PiratparotRenderer::new);
 	}
 }
