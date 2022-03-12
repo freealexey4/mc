@@ -40,7 +40,7 @@
       "name": "Uhuuuuuuuuuuuuuuuuuuuu",
       "type": "dimension",
       "sortid": 2,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "uhuuuuuuuuuuuuuuuuuuuu",
       "metadata": {
@@ -117,8 +117,10 @@
   "language_map": {
     "en_us": {
       "item.minecraft.lingering_potion.effect.tsutsau": "Lingering Potion of Tsutsau",
+      "advancements.typirat.descr": "ты попал в мир пиратов",
       "item.minecraft.potion.effect.tsutsau": "Potion of Tsutsau",
       "advancements.yvts.title": "Yvts",
+      "advancements.typirat.title": "Typirat",
       "item.pirati.uuuuu": "Uuuuu",
       "biome.pirati.uhuuuuuuuuuu": "Uhuuuuuuuuuu",
       "item.pirati.gghghghghghghghghghghghghghghghghghghghghgh": "Gghghghghghghghghghghghghghghghghghghghghgh",
